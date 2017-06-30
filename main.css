@@ -1,10 +1,18 @@
+body{
+    background-color: #3DA5D9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 img {
     height: 200px;
-    width: 200px;
+    width: 250px;
 }
-.main-nav{
-    background-color: black;
-    color: orange;
+.sampleimg{
+    width: 30%;
+    height: 30%;
+}
+#spacer{
+    margin-top: 10px;
 }
 h1 {
     font-size: 18px;
@@ -12,11 +20,18 @@ h1 {
 h3 {
     font-size: 20px;
 }
-#spacer{
-    padding-top: 50px;
+button{
+    background-color:#73BFB8;
+    border: 1px solid #73BFB8;
+    border-radius: 80px;
+    padding: 10px 50px 10px 50px;
 }
-#button-container{
-    margin-top : 12px;
+
+.navbar-inverse {
+    color:#005370;
+    background-color:#0081AF;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 #search {
     width: 400px;
@@ -25,7 +40,7 @@ h3 {
     background-position: left;
     background-origin: padding-box;
     background-repeat: no-repeat;
-    border: 1px solid #ccc;
+    border: 1px solid #73BFB8;
     border-radius: 80px;
     font-size: 16px;
     background-color: white;
@@ -37,12 +52,6 @@ h3 {
 #search:focus {
     width: 95%;
 }
-#searchcontain{
-  margin-top: 10px;
-}
-#categcontain{
-  margin-top: 10px;
-}
 #categ {
     width: fill;
     box-sizing: content-box;
@@ -51,21 +60,27 @@ h3 {
     font-size: 16px;
     background-color: white;
     background-repeat: no-repeat;
-    padding: 8px 100px 8px 40px;
-}
-#logo-container{
-    align-items: right;
+    padding: 10px 100px 10px 40px;
 }
 #logo{
-  width:50px;
-  height:50px;
+  width:40px;
+  height:40px;
 }
 #logo-text{
-    text-shadow: 2px 2px #d3d3d3;
-    color:green;
+    text-shadow: 2px 2px #121212;
+    color:#73BFB8;
+    position:   ;
+    vertical-align: left;
 }
 #logo-text-con{
-    padding-left: 100px;
-    padding-bottom: 3px;
-    display:inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section{
+    padding-left: 50px;
+    padding-right: 50px;   
+}
+.jumbotron{
+    background-color: #FEC601 !important;
 }
