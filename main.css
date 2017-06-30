@@ -4,41 +4,68 @@ img {
 }
 .main-nav{
     background-color: black;
+    color: orange;
 }
 h1 {
     font-size: 18px;
 }
+h3 {
+    font-size: 20px;
+}
 #spacer{
     padding-top: 50px;
 }
+#button-container{
+    margin-top : 12px;
+}
 #search {
-    position: center;
     width: 400px;
-
+    background-image: url("search.png");
+    background-size: 35px 35px;
+    background-position: left;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
     border: 1px solid #ccc;
     border-radius: 80px;
     font-size: 16px;
     background-color: white;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 8px 0px 8px 90px;
     -webkit-transition: width 0.4s ease-in-out;
     -moz-transition: width 0.4s ease-in-out;
 }
 #search:focus {
-    width: 100%;
+    width: 95%;
 }
-
+#searchcontain{
+  margin-top: 10px;
+}
+#categcontain{
+  margin-top: 10px;
+}
 #categ {
-    position: center;
     width: fill;
-    box-sizing: padding-box;
+    box-sizing: content-box;
     border: 1px solid #ccc;
     border-radius: 80px;
     font-size: 16px;
     background-color: white;
     background-repeat: no-repeat;
-    padding: 12px 100px 12px 40px;
+    padding: 8px 100px 8px 40px;
+}
+#logo-container{
+    align-items: right;
+}
+#logo{
+  width:50px;
+  height:50px;
 }
 #logo-text{
-    color:white;
+    text-shadow: 2px 2px #d3d3d3;
+    color:green;
+}
+#logo-text-con{
+    padding-left: 100px;
+    padding-bottom: 3px;
+    display:inline-flex;
 }
