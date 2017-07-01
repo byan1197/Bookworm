@@ -84,11 +84,11 @@
           </div>
 
           <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <a id = "carLeft" class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <a id = "carRight" class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
           </a>
@@ -100,13 +100,6 @@
 <div class ="section col-md-12">
     <h1 class = "section-title">This Month's Top Picks!</h1>
     <div id="thisweek" class="carousel slide" data-ride="listbox">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#thisweek" data-slide-to="0" class="active"></li>
-        <li data-target="#thisweek" data-slide-to="1"></li>
-        <li data-target="#thisweek" data-slide-to="2"></li>
-      </ol>
-
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
@@ -127,7 +120,7 @@
             </div>
             <div class="col-md-2">
             </div>
-            
+
           </div>
         </div>
 
@@ -149,7 +142,7 @@
             </div>
             <div class="col-md-2">
             </div>
-            
+
           </div>
         </div>
 
@@ -171,60 +164,147 @@
             </div>
             <div class="col-md-2">
             </div>
-            
+
           </div>
         </div>
       </div>
 
       <!-- Left and right controls -->
-      <a class="carousel-control-prev" role="button" href="#thisweek" data-slide="prev">
+      <a class="left carousel-control" href="#thisweek" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" role="button" href="#thisweek" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <a class="right carousel-control" href="#thisweek" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
     </div>
-    
 </div>
 <div class="row" id="other-picks">
     <div class="section col-md-6">
         <h1 class = "section-title">New Releases</h1>
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
+        <div id="newslider" class="carousel slide" data-ride="listbox">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                </div>
+                <div class="col-md-4">
+                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                  <div class="col-md-2">
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-2">
+                  </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                  <div class="col-md-2">
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-2">
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#newslider" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#newslider" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
     </div>
         <div class="section col-md-6">
         <h1 class = "section-title">Coming soon!</h1>
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div> 
-        <div class="col-md-2">
-              <img class="scrollPic" src = "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/2v/dp/p02vdpfn.jpg"></>
-        </div>      
+        <div id="soonslider" class="carousel slide" data-ride="listbox">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                </div>
+                <div class="col-md-4">
+                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                  <div class="col-md-2">
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-2">
+                  </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                  <div class="col-md-2">
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                  </div>
+                  <div class="col-md-2">
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#soonslider" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#soonslider" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
     </div>
 </div>
 

@@ -33,6 +33,14 @@ button{
     padding-bottom: 5px;
     padding-top: 10px;
 }
+
+.carousel-control.left: not(#carLeft){
+    background-image: none !important;
+}
+.carousel-control.right: not(#carRight){
+    background-image: none !important;
+}
+
 #search {
     width: 400px;
     background-image: url("search.png");
@@ -79,7 +87,7 @@ button{
 }
 .section{
     padding-left: 50px;
-    padding-right: 50px;   
+    padding-right: 50px;
 }
 .jumbotron{
     background-color: #FEC601 !important;
