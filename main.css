@@ -1,5 +1,6 @@
+/*https://coolors.co/474a2c-636940-f1f7ed-91c7b1-b33951*/
 body{
-    background-color: #3DA5D9;
+    background-color: #F1F7ED;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -21,34 +22,32 @@ h3 {
     font-size: 20px;
 }
 button{
-    background-color:#73BFB8;
-    border: 1px solid #73BFB8;
+    background-color:#91C7B1;
+    border: 1px solid #91C7B1;
     border-radius: 80px;
     padding: 10px 50px 10px 50px;
 }
-
+#navcomp1, #navcomp2, #navcomp3 {
+    padding-top: 6px;
+}
 .navbar-inverse {
-    color:#005370;
-    background-color:#0081AF;
+    color:#474A2C;
+    background-color:#474A2C;
     padding-bottom: 5px;
-    padding-top: 10px;
 }
 
-.carousel-control.left: not(#carLeft){
-    background-image: none !important;
-}
-.carousel-control.right: not(#carRight){
+.carousel-control.left, .carousel-control.right{
     background-image: none !important;
 }
 
 #search {
-    width: 400px;
+    width: 700px;
     background-image: url("search.png");
     background-size: 35px 35px;
     background-position: left;
     background-origin: padding-box;
     background-repeat: no-repeat;
-    border: 1px solid #73BFB8;
+    border: 1px solid #474A2C;
     border-radius: 80px;
     font-size: 16px;
     background-color: white;
@@ -70,9 +69,27 @@ button{
     background-repeat: no-repeat;
     padding: 10px 100px 10px 40px;
 }
+.bbtitle{
+  border-radius: 80px;
+  background-color:#474A2C;
+  box-sizing: content-box;
+  border: 1px solid #474A2C;
+  padding: 10px 10px 10px 40px;
+  width: 150px;
+  height: 20px;
+}
+.browseby {
+  border-radius: 80px;
+  background-color:#636940;
+  box-sizing: content-box;
+  border: 1px solid #636940;
+  padding: 10px 10px 10px 40px;
+  width: 150px;
+  height: 20px;
+}
 #logo{
-  width:40px;
-  height:40px;
+  width:auto;
+  height:50px;
 }
 #logo-text{
     text-shadow: 2px 2px #121212;
@@ -90,5 +107,8 @@ button{
     padding-right: 50px;
 }
 .jumbotron{
-    background-color: #FEC601 !important;
+    background-color: #91C7B1 !important;
+}
+.book-container{
+  display: flex;
 }

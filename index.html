@@ -13,21 +13,20 @@
 <nav class='navbar-inverse navbar-fixed-top sticky' role='navigation'>
     <div class="col-md-2" id = "logo-text-con">
         <img src="logo.png" id = "logo"/>
-        <h1 id="logo-text">BOOKWORM</h1>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" id = "navcomp1">
         <form>
             <input type="text" id = "search" placeholder="Search book names, keywords, authors...">
         </form>
     </div>
-    <div class ="col-md-2">
+    <div class ="col-md-2" id = "navcomp2">
         <select id = "categ">
             <option value="" disabled="disabled" selected="selected">Category</option>
             <option value="mystery">Mystery</option>
             <option value="fantasy">Fantasy</option>
         </select>
     </div>
-    <div class ="col-md-1">
+    <div class ="col-md-1" id = "navcomp3">
         <button id = "go"> GO! </button>
 
     </div>
@@ -42,16 +41,16 @@
     <div class="col-md-2">
     </div>
     <div class="col-md-2">
-        <h3>Browse by:</h3>
+        <h3 class = "bbtitle">Browse by:</h3>
     </div>
     <div class="col-md-2">
-        <h3>Author</h3>
+        <h3  class = "browseby">Author</h3>
     </div>
     <div class="col-md-2">
-        <h3>Category</h3>
+        <h3 class = "browseby">Category</h3>
     </div>
     <div class="col-md-2">
-        <h3>Editor's Pick</h3>
+        <h3 class = "browseby">Editor's Pick</h3>
     </div>
     <div class="col-md-4">
     </div>
@@ -107,38 +106,36 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
-            </div>
-            <div class="col-md-2">
-            </div>
-
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
-            </div>
-            <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
-            </div>
-            <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
-            </div>
-            <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
             </div>
@@ -151,16 +148,78 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src = "samplebook.jpg" class = "sampleimg"/>
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-2">
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class = "book-container">
+                <img src = "samplebook.jpg" class = "sampleimg"/>
+                <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                  <br/>Author:Haruki Murakami
+                  <br/><br/>Rating: 4/5</p>
+              </div>
             </div>
             <div class="col-md-2">
             </div>
@@ -192,10 +251,20 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-4">
-                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                  <div class = "book-container">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                      <br/>Author:Haruki Murakami
+                      <br/><br/>Rating: 4/5</p>
+                  </div>
                 </div>
                 <div class="col-md-4">
-                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                  <div class = "book-container">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                      <br/>Author:Haruki Murakami
+                      <br/><br/>Rating: 4/5</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
                 </div>
@@ -207,10 +276,20 @@
                   <div class="col-md-2">
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-2">
                   </div>
@@ -222,10 +301,20 @@
                   <div class="col-md-2">
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-2">
                   </div>
@@ -254,10 +343,20 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-4">
-                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                  <div class = "book-container">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                      <br/>Author:Haruki Murakami
+                      <br/><br/>Rating: 4/5</p>
+                  </div>
                 </div>
                 <div class="col-md-4">
-                  <img src = "samplebook.jpg" class = "sampleimg"/>
+                  <div class = "book-container">
+                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                      <br/>Author:Haruki Murakami
+                      <br/><br/>Rating: 4/5</p>
+                  </div>
                 </div>
                 <div class="col-md-2">
                 </div>
@@ -269,10 +368,20 @@
                   <div class="col-md-2">
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-2">
                   </div>
@@ -284,10 +393,20 @@
                   <div class="col-md-2">
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-4">
-                    <img src = "samplebook.jpg" class = "sampleimg"/>
+                    <div class = "book-container">
+                      <img src = "samplebook.jpg" class = "sampleimg"/>
+                      <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+                        <br/>Author:Haruki Murakami
+                        <br/><br/>Rating: 4/5</p>
+                    </div>
                   </div>
                   <div class="col-md-2">
                   </div>
