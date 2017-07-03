@@ -1,4 +1,6 @@
-/*https://coolors.co/474a2c-636940-f1f7ed-91c7b1-b33951*/
+/*
+https://coolors.co/474a2c-636940-f1f7ed-91c7b1-0a1128
+*/
 body{
     background-color: #F1F7ED;
     padding-top: 40px;
@@ -71,9 +73,9 @@ button{
 }
 .bbtitle{
   border-radius: 80px;
-  background-color:#474A2C;
+  background-color:#F1F7ED;
   box-sizing: content-box;
-  border: 1px solid #474A2C;
+  border: 1px solid #F1F7ED;
   padding: 10px 10px 10px 40px;
   width: 150px;
   height: 20px;
