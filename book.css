@@ -40,10 +40,6 @@ button{
     padding-bottom: 5px;
 }
 
-.carousel-control.left, .carousel-control.right{
-    background-image: none !important;
-}
-
 #search {
     width: 700px;
     background-image: url("search.png");
@@ -91,7 +87,7 @@ button{
   width: 150px;
   height: 20px;
 }
-.browseby:hover {
+.browseby:hover, #categBtn {
     background-color: orange;
 }
 #logo{
@@ -102,18 +98,6 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.section{
-    padding:50px;
-}
-.section-title{
-    margin-left:40px;
-}
-.jumbotron{
-    background-color: #91C7B1 !important;
-}
-.book-container{
-  display: flex;
 }
 a{
     text-decoration: none;
@@ -141,16 +125,4 @@ a:hover{
 }
 #buttonfix{
     margin-top: -10px;
-}
-#booklink{
-    border: 1px solid #d2d2d2;
-    display: flex;
-}
-#booklink:hover{
-    background-color:white;
-}
-#booklink img{
-    height: 130px;
-    width: auto;
-    margin-right: 10px;
 }
