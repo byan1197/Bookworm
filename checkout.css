@@ -22,6 +22,9 @@ img {
 h1 {
     font-size: 18px;
 }
+h2{
+    font-size: 30px;
+}
 h3 {
     font-size: 20px;
 }
@@ -60,7 +63,7 @@ button{
     width: 95%;
 }
 #categ {
-    width: fill;
+    width: 100px;
     box-sizing: content-box;
     border: 1px solid #ccc;
     border-radius: 80px;
@@ -128,30 +131,42 @@ a:hover{
 }
 
 /*TODO*/
-#book-search-container{
-    margin:50px;
-    border: 1px solid #91C7B1;
-    padding:20px;
+#checkout-top{
+    padding-top: 70px;
 }
-.booksearchbutton{
-    width:200px;
-    margin: 3px;
+#checkout-cont{
+    margin-top:40px;
 }
-.booksearchbutton:hover{
+#inputforms{
+    display:none;
+}
+input, select{
+    width:100%;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    border: 1px solid #474A2C;
+    border-radius: 80px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 8px 0px 8px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+}
+#purchasecont{
+    padding:40px;
+}
+#submit{
+    background-color: #91C7B1;
+    border: 0px;
+    padding: 8px 0px 8px 0px;
+
+}
+#submit:hover{
     background-color: green;
-}
-#cont{
-    padding-top: 50px;
-}
+    padding: 8px 0px 8px 0px;
 
-.pagination {
-    position: center;
-    display: inline-block;
 }
-
-.pagination a {
-    color: black;
-    float: center;
-    padding: 8px 16px;
-    text-decoration: none;
+#thanks{
+    display:none;
 }

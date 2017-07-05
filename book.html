@@ -5,36 +5,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="search.css"/>
+  <link rel="stylesheet" type="text/css" href="book.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class='navbar-inverse navbar-fixed-top sticky' role='navigation'>
-    <div class="col-md-2" id = "logo-text-con">
-        <a href="index.html">
-            <img src="logo.png" id = "logo"/>
-        </a>
-    </div>
-    <div class="col-md-5" id = "navcomp1">
-        <form>
-            <input type="text" id = "search" placeholder="Search book names, keywords, authors...">
-        </form>
-    </div>
-    <div class ="col-md-2" id = "navcomp2">
-        <select id = "categ">
-            <option value="" disabled="disabled" selected="selected">Category</option>
-            <option value="mystery">Mystery</option>
-            <option value="fantasy">Fantasy</option>
-        </select>
-    </div>
-    <div class ="col-md-1" id = "navcomp3">
-        <button id = "go"  onclick="location.href='search.html'"> GO! </button>
-    </div>
-    <div class ="col-md-2" id = "navcomp4">
-        <button id = "go"  onclick="location.href='cart.html'"> My Cart </button>
-    </div>
-</nav>
+    <nav class='navbar-inverse navbar-fixed-top sticky' role='navigation'>
+        <div class="col-md-2" id = "logo-text-con">
+            <a href="index.html">
+                <img src="logo.png" id = "logo"/>
+            </a>
+        </div>
+        <div class="col-md-5" id = "navcomp1">
+            <form>
+                <input type="text" id = "search" placeholder="Search book names, keywords, authors...">
+            </form>
+        </div>
+        <div class ="col-md-2" id = "navcomp2">
+            <select id = "categ">
+                <option value="" disabled="disabled" selected="selected">Category</option>
+                <option value="mystery">eBooks</option>
+                <option value="fantasy">Audiobook</option>
+                <option value="fantasy">Hardcover</option>
+            </select>
+        </div>
+        <div class ="col-md-1" id = "navcomp3">
+            <button id = "go"  onclick="validateSearch()"> GO! </button>
+        </div>
+        <div class ="col-md-2" id = "navcomp4">
+            <button id = "go"  onclick="location.href='cart.html'"> My Cart </button>
+        </div>
+    </nav>
 
 <div class="row">
     <div class="col-md-12">
@@ -109,6 +110,156 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+        <img src="book.jpg"/>
+    </div>
+    <div class="col-md-6">
+        <h1><b>The Once and Future King</b></h1>
+        <h1>By: Terrance Hanbury White</h1>
+        <h1>Price: $15.99 (Hardcover)  $6.99 (eBook)</h1>
+        <h1>Description:</h1>
+        <p>Once upon a time, a young boy called “Wart” was tutored by a magician named Merlyn in preparation for a future he couldn’t possibly imagine. A future in which he would ally himself with the greatest knights, love a legendary queen and unite a country dedicated to chivalrous values. A future that would see him crowned and known for all time as Arthur, King of the Britons.
+        </p>
+
+        <p id="seemore"></br>
+        During Arthur’s reign, the kingdom of Camelot was founded to cast enlightenment on the Dark Ages, while the knights of the Round Table embarked on many a noble quest. But Merlyn foresaw the treachery that awaited his liege: the forbidden love between Queen Guinevere and Lancelot, the wicked plots of Arthur’s half-sister Morgause, and the hatred she fostered in Mordred that would bring an end to the king’s dreams for Britain--and to the king himself.
+        </p>
+
+        <a href="#" id="seemorelink" onclick="showmore()">show more</a>
+        <h1>Rating: <b>4/5</b> (231 Votes)<h1>
+        <div class = "row">
+            <div class="col-md-3">
+                <button class = "booksearchbutton" onclick="addToCart()"> Add hardcover to cart </button>
+            </div>
+            <div class="col-md-3">
+                <button class = "booksearchbutton" onclick="addToCart()"> Add eBook to cart </button>
+            </div>
+            <div class="col-md-3">
+                <button class = "booksearchbutton" onclick="share()"> Share </button>
+            </div>
+            <div class="col-md-3">
+                <button class = "booksearchbutton" onclick="showReview()">Reviews</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row" id="related-books">
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+        <h1>RELATED BOOKS:</h1>
+    </div>
+    <div class="col-md-2">
+      <div class = "book-container">
+        <a href="book.html" id = "booklink">
+        <img src = "samplebook.jpg" class = "sampleimg"/>
+        <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+          <br/>Author:Haruki Murakami
+          <br/><br/>Rating: 4/5</p>
+      </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class = "book-container">
+        <a href="book.html" id = "booklink">
+        <img src = "samplebook.jpg" class = "sampleimg"/>
+        <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+          <br/>Author:Haruki Murakami
+          <br/><br/>Rating: 4/5</p>
+      </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class = "book-container">
+        <a href="book.html" id = "booklink">
+        <img src = "samplebook.jpg" class = "sampleimg"/>
+        <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+          <br/>Author:Haruki Murakami
+          <br/><br/>Rating: 4/5</p>
+      </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class = "book-container">
+        <a href="book.html" id = "booklink">
+        <img src = "samplebook.jpg" class = "sampleimg"/>
+        <p>Colorless Tsukuru Tazaki and His Years of Pilgrimage
+          <br/>Author:Haruki Murakami
+          <br/><br/>Rating: 4/5</p>
+      </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
+
+<div  id="review-container">
+    <div class = "row">
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <h1><b>Reviews From Bookworms</b></h1>
+        </div>
+        <div class="col-md-7">
+        </div>
+    </div>
+    <div class = "row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <img id="profile" src="profile.jpg"/>
+        </div>
+        <div class="col-md-6">
+            <h1>bookworm_FAKEACCOUNT</h1>
+            <p>This book sucks aksdjfhkasdhfkajsdhf akjsd hfak sdjhf aksjhfdak sjdhfakjsdhfkas jdhasdjk f hskdjfha sdkjfhsdkjfah skfjhsdkfjas hdkfj a  shfkjashfk  jshdfka!!! sjhfk</p>
+            <h1>Posted: 2 hours ago</h1>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class = "row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <img id="profile" src="profile.jpg"/>
+        </div>
+        <div class="col-md-6">
+            <h1>bookworm_FAKEACCOUNT</h1>
+            <p>This book sucks aksdjfhkasdhfkajsdhf akjsd hfak sdjhf aksjhfdak sjdhfakjsdhfkas jdhasdjk f hskdjfha sdkjfhsdkjfah skfjhsdkfjas hdkfj a  shfkjashfk  jshdfka!!! sjhfk</p>
+            <h1>Posted: 2 hours ago</h1>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<div class="footer container text-center" style="border-top: 1px solid #DDD; padding-top: 20px; margin-top: 10px;">				<div class="row">
+					<div class="col-lg-4">
+						<p class="footer-text">Bookworm</p>
+						<p class="footer-text">Ottawa @ ottawa</p>
+						<p class="footer-text">Ahlie</p>
+						<p class="footer-text">1-91923-123342</p>
+					</div>
+
+					<div class="col-lg-4">
+					<a href="#"><p class="footer-text footer-link">Help</p></a>
+					<a href="#"><p class="footer-text footer-link">Contact Us</p></a>
+					</div>
+
+					<div class="col-lg-4">
+						<a href="#"><p class="footer-text footer-link">Terms of Agreement</p></a>
+						<a href="#"><p class="footer-text footer-link">Policies</p></a>
+						<a href="#"><p class="footer-text footer-link">Legal</p></a>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+                        <p class="card-detail" style="text-align: center;">Copyright BookWORMWOMRWORMWROMWROMWR 2017 &copy;</p>
+					</div>
+			</div>
+		</div>
+
+
+
 <script>
 function share() {
     alert("Share via: \nFacebook \nTwitter \nReddit \n");
@@ -121,6 +272,41 @@ function toggleCat() {
         x.style.display = 'none';
     }
 }
+function validateSearch() {
+    var x = document.getElementById("search").value;
+    if (x == "" || x =="Search book names, keywords, authors...") {
+        alert("Search must be filled out");
+        return false;
+    }
+    else{
+        window.location.href = 'search.html';
+    }
+}
+function showmore(){
+    var x = document.getElementById('seemore');
+    var ref = document.getElementById('seemorelink');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+        ref.innerHTML="show less";
+    } else {
+        x.style.display = 'none';
+        ref.innerHTML="show more";
+    }
+}
+
+function showReview(){
+    var x = document.getElementById('review-container');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none'
+    }
+}
+
+function addToCart(){
+    alert("Added to cart");
+}
+
 </script>
 
 </body>

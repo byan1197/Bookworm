@@ -9,8 +9,8 @@ body {
     padding-bottom: 40px;
 }
 img {
-    height: 200px;
-    width: 250px;
+    height: 400px;
+    width: auto;
 }
 .sampleimg{
     width: 30%;
@@ -115,6 +115,10 @@ a:hover{
     padding-bottom:150px;
 }
 
+#seemore{
+    display:none;
+}
+
 #categBtn{
     margin-top: 20px;
     background-color:#636940;
@@ -125,4 +129,41 @@ a:hover{
 }
 #buttonfix{
     margin-top: -10px;
+}
+
+/*TODO*/
+#related-books, #review-container{
+    padding:10px;
+    border: 1px solid #d2d2d2;
+    margin:25px;
+    margin-left: 40px;
+    margin-right:40px;
+}
+.booksearchbutton{
+    width:200px;
+    height:100px;
+    margin: 3px;
+}
+.booksearchbutton:hover{
+    background-color: green;
+}
+.book-container{
+    display:flex;
+}
+#booklink{
+    border: 1px solid #d2d2d2;
+    display: flex;
+}
+#booklink:hover{
+    background-color:white;
+}
+#booklink img{
+    height: 130px;
+    width: auto;
+    margin-right: 10px;
+}
+#profile{
+    width:120px;
+    margin:5px;
+    height:auto;
 }

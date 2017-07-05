@@ -4,7 +4,7 @@ https://coolors.co/474a2c-636940-f1f7ed-91c7b1-0a1128
 body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #F1F7ED;
+    background-color: white;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -153,4 +153,8 @@ a:hover{
     height: 130px;
     width: auto;
     margin-right: 10px;
+}
+
+#review-container{
+    display:none;
 }

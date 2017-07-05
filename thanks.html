@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="checkout.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class='navbar-inverse navbar-fixed-top sticky' role='navigation'>
+    <div class="col-md-2" id = "logo-text-con">
+        <a href="index.html">
+            <img src="logo.png" id = "logo"/>
+        </a>
+    </div>
+    <div class="col-md-5" id = "navcomp1">
+        <form>
+            <input type="text" id = "search" placeholder="Search book names, keywords, authors...">
+        </form>
+    </div>
+    <div class ="col-md-2" id = "navcomp2">
+        <select id = "categ">
+            <option value="" disabled="disabled" selected="selected">Category</option>
+            <option value="mystery">eBooks</option>
+            <option value="fantasy">Audiobook</option>
+            <option value="fantasy">Hardcover</option>
+        </select>
+    </div>
+    <div class ="col-md-1" id = "navcomp3">
+        <button id = "go"  onclick="validateSearch()"> GO! </button>
+    </div>
+    <div class ="col-md-2" id = "navcomp4">
+        <button id = "go"  onclick="location.href='cart.html'"> My Cart </button>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id= "spacer"></div>
+    </div>
+</div>
+
+<div class ="row" id = "checkout-top">
+    <div class = "col-md-2">
+    </div>
+    <div class = "col-md-10">
+        <h1>Thanks for shopping with us, bookworm! <br/> <a href="index.html">Click me to go back to the main page.</a><h1>
+    </div>
+
+</div>
+
+<script>
+function confirm(){
+    var x = document.getElementById('inputforms');
+    var y = document.getElementById('checkBtn');
+    x.style.display='block';
+    y.style.display='none';
+}
+</script>
+
+</body>
+</html>

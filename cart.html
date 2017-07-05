@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="cart.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class='navbar-inverse navbar-fixed-top sticky' role='navigation'>
+    <div class="col-md-2" id = "logo-text-con">
+        <a href="index.html">
+            <img src="logo.png" id = "logo"/>
+        </a>
+    </div>
+    <div class="col-md-5" id = "navcomp1">
+        <form>
+            <input type="text" id = "search" placeholder="Search book names, keywords, authors...">
+        </form>
+    </div>
+    <div class ="col-md-2" id = "navcomp2">
+        <select id = "categ">
+            <option value="" disabled="disabled" selected="selected">Category</option>
+            <option value="mystery">eBooks</option>
+            <option value="fantasy">Audiobook</option>
+            <option value="fantasy">Hardcover</option>
+        </select>
+    </div>
+    <div class ="col-md-1" id = "navcomp3">
+        <button id = "go"  onclick="validateSearch()"> GO! </button>
+    </div>
+    <div class ="col-md-2" id = "navcomp4">
+        <button id = "go"  onclick="location.href='cart.html'"> My Cart </button>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id= "spacer"></div>
+    </div>
+</div>
+
+<div class ="row">
+    <div class = "col-md-2"></div>
+    <div class = "col-md-4">
+        <h2> <b>My Cart</b> </h1>
+    </div>
+</div>
+
+<div class ="row" id="cartbook2">
+    <div class = "col-md-2"></div>
+    <div class = "col-md-8" >
+        <div class="col-md-4" >
+            <a href= "book.html">
+                <img src = ""/>
+            </a>
+        </div>
+        <div class ="col-md-4">
+            <a href="book.html">
+            <h1>BOOK NAME
+            <h4>Author name
+            <br/>Insert Description. This is to test hte description of the book there is a lot of text.
+            This is just to test the description of the book, there is a lot of text.
+            <br/><br/>Price: $12.31
+            </h4></h1>
+        </a>
+        </div>
+    </div>
+    <div class = "col-md-2">
+        <p>Quantity:</p>
+        <select id = "quantity">
+            <option value="rel" selected="selected">1</option>
+            <option value="lth">2</option>
+            <option value="lth">3</option>
+            <option value="lth">4</option>
+            <option value="lth">5</option>
+            <option value="lth">6</option>
+            <option value="lth">7</option>
+            <option value="lth">8</option>
+            <option value="lth">9</option>
+            <option value="lth">10</option>
+        </select>
+        <button class="rmBtn" onclick="removeBook2()">Remove</button>
+    </div>
+    <div class = "col-md-2"></div>
+</div>
+
+<div class ="row" id="cartbook1">
+    <div class = "col-md-2"></div>
+    <div class = "col-md-8" >
+        <div class="col-md-4" >
+            <a href= "book.html">
+                <img src = ""/>
+            </a>
+        </div>
+        <div class ="col-md-4">
+            <a href="book.html">
+            <h1>BOOK NAME2
+            <h4>Author name
+            <br/>Insert Description. This is to test hte description of the book there is a lot of text.
+            This is just to test the description of the book, there is a lot of text.
+            <br/><br/>Price: $12.31
+            </h4></h1>
+        </a>
+        </div>
+    </div>
+    <div class = "col-md-2">
+        <p>Sort by:</p>
+        <select id = "sortBy">
+            <option value="rel" selected="selected">1</option>
+            <option value="lth">2</option>
+            <option value="lth">3</option>
+            <option value="lth">4</option>
+            <option value="lth">5</option>
+            <option value="lth">6</option>
+            <option value="lth">7</option>
+            <option value="lth">8</option>
+            <option value="lth">9</option>
+            <option value="lth">10</option>
+        </select>
+        <button class ="rmBtn"onclick="removeBook()">Remove</button>
+    </div>
+
+    <div class = "col-md-2"></div>
+</div>
+
+<div class ="row">
+    <div class = "col-md-5"></div>
+    <div class = "col-md-3" id="totals">
+        <h1><b>Total: </b>$123.00</h1>
+        <h1><b>Taxes: </b>$123.00</h1>
+        <h1><b>Grand Total: </b>$123.00</h1>
+    </div>
+    <div class = "col-md-2" id="checkout-cont">
+        <button onClick="checkout()" >Checkout</button>
+    </div>
+    <div class = "col-md-2"></div>
+</div>
+
+
+<div class="footer container text-center" style="border-top: 1px solid #DDD; padding-top: 20px; margin-top: 10px;">				<div class="row">
+					<div class="col-lg-4">
+						<p class="footer-text">Bookworm</p>
+						<p class="footer-text">Ottawa @ ottawa</p>
+						<p class="footer-text">Ahlie</p>
+						<p class="footer-text">1-91923-123342</p>
+					</div>
+
+					<div class="col-lg-4">
+					<a href="#"><p class="footer-text footer-link">Help</p></a>
+					<a href="#"><p class="footer-text footer-link">Contact Us</p></a>
+					</div>
+
+					<div class="col-lg-4">
+						<a href="#"><p class="footer-text footer-link">Terms of Agreement</p></a>
+						<a href="#"><p class="footer-text footer-link">Policies</p></a>
+						<a href="#"><p class="footer-text footer-link">Legal</p></a>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+                        <p class="card-detail" style="text-align: center;">Copyright BookWORMWOMRWORMWROMWROMWR 2017 &copy;</p>
+					</div>
+			</div>
+		</div>
+
+<script>
+function share() {
+    alert("Share via: \nFacebook \nTwitter \nReddit \n");
+}
+function toggleCat() {
+    var x = document.getElementById('catCon');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+function removeBook() {
+    var x = document.getElementById('cartbook1');
+    if (x.style.display == 'none') {
+    } else {
+        x.style.display = 'none';
+    }
+}
+function removeBook2() {
+    var x = document.getElementById('cartbook2');
+    if (x.style.display == 'none') {
+    } else {
+        x.style.display = 'none';
+    }
+}
+function validateSearch() {
+    var x = document.getElementById("search").value;
+    if (x == "" || x =="Search book names, keywords, authors...") {
+        alert("Search must be filled out");
+        return false;
+    }
+    else{
+        window.location.href = 'search.html';
+    }
+}
+function addToCart(){
+    alert("Added to cart");
+}
+function checkout() {
+    var x = document.getElementById('cartbook2');
+    var y = document.getElementById('cartbook1');
+    if (x.style.display == 'none' && y.style.display == 'none') {
+        alert("Cart is empty, go fill it up!");
+        return false;
+    }
+    else{
+        window.location.href = 'checkout.html';
+    }
+}
+</script>
+
+</body>
+</html>
